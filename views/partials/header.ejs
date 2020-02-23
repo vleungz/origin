@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta char charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://kit.fontawesome.com/c6beeaed45.js" crossorigin="anonymous"></script>
+    <title>origin</title>
+</head>
+<body>
+<nav id="mainNav" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+    <a href="/" class="navbar-brand">origin</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+            <% if(typeof page !== 'undefined' && page === 'home'){ %>
+                <li class="nav-item">
+                    <a href="/home" class="active nav-link">home</a>
+                </li>
+            <%}else{ %>
+                <li class="nav-item">
+                    <a href="/home" class="nav-link">home</a>
+                </li>
+            <%}%>
+            <% if(typeof page !== 'undefined' && page === 'about'){ %>
+                <li class="nav-item">
+                    <a href="/about" class="active nav-link">about</a>
+                </li>
+            <%}else{ %>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">about</a>
+                </li>
+            <%}%>
+            <% if(typeof page !== 'undefined' && page === 'menu'){ %>
+                <li class="nav-item">
+                    <a href="/menu" class="active nav-link">menu</a>
+                </li>
+            <%}else{ %>
+                <li class="nav-item">
+                    <a href="/menu" class="nav-link">menu</a>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+</nav>
